@@ -13,9 +13,3 @@ except Exception as e:
         print(add_integer(None))
     except Exception as e:
         print(e)
-        
-
-
-
-
-
