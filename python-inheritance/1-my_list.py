@@ -2,11 +2,8 @@
 """Module: 1-my_list
 """
 class MyList(list):
-    """Represent a MyList
-    """
-
-   def print_sorted(self):
-    """prints the list, but sorted
-    """
-    print(sorted(self))
-         
+    """Class MyList that inherits from list"""
+    
+    def print_sorted(self):
+        """Print the list in ascending sorted order"""
+        print(sorted(self))
