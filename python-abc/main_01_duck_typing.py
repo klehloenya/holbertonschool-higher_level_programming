@@ -1,16 +1,10 @@
 #!/usr/bin/env python3
-from task_00_abc import Animal, Dog, Cat
+from task_01_duck_typing import Circle, Rectangle, shape_info
 
-# Instantiate Dog and Cat objects
-bobby = Dog()
-garfield = Cat()
+# Create instances of Circle and Rectangle
+circle = Circle(radius=5)
+rectangle = Rectangle(width=4, height=7)
 
-# Print the sounds they make
-print(bobby.sound())  # Output: Bark
-print(garfield.sound())  # Output: Meow
-
-# Attempting to instantiate Animal will raise a TypeError
-try:
-    animal = Animal()  # This will raise an error
-except TypeError as e:
-    print(e)  # Output: Can't instantiate abstract class Animal with abstract method sound
+# Pass the objects to shape_info function
+shape_info(circle)
+shape_info(rectangle)
