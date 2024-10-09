@@ -1,0 +1,53 @@
+THE DIFFERENCE BETWEEN HTTP AND HTTPS.
+
+> HTTP does not encrypt data, so in this it makes it more vulnerable to hackers, while HTTPS secures the data by encrypting it.
+> HTTPS website are often observed as more secure and trustworth, especially when conducting transactions and sensative information, as compared to HTTP.
+> HTTPS add slight overhead due to encryption , but modern optimizations in TLS have made the difference negligible.
+> HTTPS is crucial in building web applications as it helps the developer to structure thier API calls, handle errors and ensure secure communication.
+> HTTPS search engines are prioritized more than the websites that use HTTP.
+> implementing HTTPS requires  SSL/TLS certificate, which can be obtained from a Certificate Authority. unlike that of HTTP which does not require any Certificate.
+
+
+Here’s a visual depiction of the structure of an HTTP request and response, showing the key components such as the request line, headers, optional body, and the response with status line, headers, and body. This outlines the interaction between client and server in an easy-to-understand format.
+
+3. List of common methods ans status codes and their descriptions,:
+
+GET METHOD: Description: Retrieves data from the server.
+            Use case: Fetching a webpage, retrieving data from an API (e.g., getting a user profile).
+
+ POST METHOD:   Description: Submits data to be processed by the server.
+                Use case: Submitting a form, uploading a file, creating a new resource (e.g.creating a new user in a database).
+
+PUT METHOD  : Description: Updates or creates a resource on the server. If the resource exists, it is updated; otherwise, a new resource is created.
+Use case: Updating an existing user’s profile, saving a document.
+
+DELETE Method: 
+
+    Description: Deletes a resource on the server.
+    Use case: Deleting a user account, removing a post from a blog.
+
+PATCH Method: 
+
+    Description: Partially updates a resource.
+    Use case: Updating a single field of a user’s profile (e.g., changing a user’s email without altering other data).
+
+HEAD Method: 
+
+    Description: Similar to GET, but it only retrieves the headers without the body content.
+    Use case: Checking if a resource exists or verifying if it has been modified, without downloading the resource.
+
+OPTIONS Method:
+
+    Description: Returns the HTTP methods that the server supports for a specific resource.
+    Use case: Discovering the allowed methods for interacting with an API (e.g., discovering that POST and GET are allowed but DELETE is not).
+
+CONNECT Method:
+
+    Description: Establishes a tunnel to the server, typically used for SSL tunneling.
+    Use case: Setting up an encrypted tunnel through an HTTP proxy (often used for HTTPS connections).
+
+TRACE Method:
+
+    Description: Performs a message loop-back test along the path to the target resource.
+    Use case: Used for diagnostic purposes to track how an HTTP request is routed.
+           
