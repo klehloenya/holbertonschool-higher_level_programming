@@ -1,3 +1,5 @@
+--scripts that creates a tqable second_table in the databse hbtn_0c_) in yout MySql server
+
 USE hbtn_0c_0;
 CREATE TABLE IF NOT EXISTS second_table (
     id INT,
