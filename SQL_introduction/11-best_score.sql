@@ -1,7 +1,13 @@
---script that lists all records with a score >= 10 in the tabel seocnd of the tabase hbtn_0c_0 in your MySQL server
+-- SQL command to list all records with a score >= 10 in the table of the database, displaying both score and name, ordered by score (top first)
 
-USE hbtn_0c_0;
-SELECT score, name FROM second_table ORDER BY score DESC;
+-- SQL query to select records with score >= 10 from the table, ordering by score (top first)
+SELECT score, name
+FROM second_table
+WHERE score >= 10
+ORDER BY score DESC;
+
+
+
 
 
 

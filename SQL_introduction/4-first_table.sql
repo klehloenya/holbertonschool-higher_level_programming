@@ -1,12 +1,13 @@
---script that creates a table called first_table in the current database in youyr MySQL server
+-- Create a table called first_table with values id and name.
+CREATE TABLE IF NOT EXISTS `first_table` (`id` INT, `name` VARCHAR(256));
 
-CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
-USE hbtn_0c_0;
 
-CREATE TABLE IF NOT EXISTS first_table (
-    id INT,
-    name VARCHAR(256)
-);
+
+
+
+
+
+
 
 
 
